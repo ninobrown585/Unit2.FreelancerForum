@@ -1,0 +1,36 @@
+
+  h4 {
+    /* background-color: orange; */
+    height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  h2 {
+    /* background-color: yellow; */
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  p {
+    /* background-color: green; */
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+ div {
+    /* background-color: blue; */
+    
+  }
+  
+  .purple {
+    background-color: purple;
+  }
+
+  
