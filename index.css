@@ -15,7 +15,7 @@
     justify-content: center;
   }
   
-  p {
+  p{
     /* background-color: green; */
     height: 20px;
     display: flex;
@@ -24,13 +24,32 @@
     
   }
   
- div {
-    /* background-color: blue; */
-    
-  }
-  
-  .purple {
-    background-color: purple;
-  }
+    #name, #section, #occupation, #price {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        height: 0vh;
+        width: 20%;
+        background-color: blue;
+    }
 
-  
+    #occupation {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-around;
+        height: 0vh;
+        width: 20%;
+        background-color: rgb(255, 0, 170);
+    }
+
+    #price {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-around;
+        height: 0vh;
+        width: 40%;
+        background-color: rgb(128, 118, 124);
+    }

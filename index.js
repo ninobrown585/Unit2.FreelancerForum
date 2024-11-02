@@ -24,6 +24,7 @@ const freelancers = [
         occupation: 'programmer',
         start_price: 70
     },
+    
 ];
 
 //add freelancers to the list
