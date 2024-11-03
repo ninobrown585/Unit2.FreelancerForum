@@ -25,6 +25,8 @@ const freelancers = [
         start_price: 70
     },
     
+    
+    
 ];
 
 //add freelancers to the list
@@ -48,12 +50,10 @@ function render() {
     const header = document.createElement('h2');
         header.textContent = "Freelancer Forum";
         freelanceList.appendChild(header);
-    const subHeader = document.createElement('p');
-        subHeader.textContent = "The Average starting price is ";
-        freelanceList.appendChild(subHeader);
-    const header2 = document.createElement('h2');
-        header2.textContent = "Available Freelancers";
-        freelanceList.appendChild(header2);
+    // const subHeader = document.createElement('p');
+    //     subHeader.textContent = `The Average starting price is  `;
+    //     freelanceList.appendChild(subHeader);
+    
     
 
     const nameList = document.getElementById('name');
@@ -77,6 +77,26 @@ function render() {
         title3.textContent = "Starting Price ";
         priceList.appendChild(title3);
 
+    if(freelancers.length === 0) {
+        const p = document.createElement('p');
+        p.textContent = 'No freelancers available.';
+        freelanceList.appendChild(p);
+    }
+
+    let total = 0;
+    for (const freelancer of freelancers) {
+        total += freelancer.start_price;
+    }
+
+    const average = total / freelancers.length;
+    const averagePrice = document.createElement('p');
+    averagePrice.textContent = `The Average starting price is $${average}`;
+    freelanceList.appendChild(averagePrice);
+
+    const header2 = document.createElement('h2');
+        header2.textContent = "Available Freelancers";
+        freelanceList.appendChild(header2);
+
     freelancers.forEach(freelancer => {
         
         const freeLanceName = document.createElement('p');
@@ -90,10 +110,8 @@ function render() {
         occupationList.appendChild(freeLanceOccupation);
 
         const freeLancePrice = document.createElement('p');
-        freeLancePrice.textContent = `${freelancer.start_price}`;
+        freeLancePrice.textContent = `$${freelancer.start_price}`;
         priceList.appendChild(freeLancePrice);
-
-
         
     });
     

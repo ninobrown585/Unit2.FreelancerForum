@@ -24,7 +24,7 @@
     
   }
   
-    #name, #section, #occupation, #price {
+    #name {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -32,6 +32,7 @@
         height: 0vh;
         width: 20%;
         background-color: blue;
+        padding-left: 300px;
     }
 
     #occupation {
@@ -42,6 +43,7 @@
         height: 0vh;
         width: 20%;
         background-color: rgb(255, 0, 170);
+        padding-left: 350px;
     }
 
     #price {
@@ -52,4 +54,5 @@
         height: 0vh;
         width: 40%;
         background-color: rgb(128, 118, 124);
+        padding-left: 350px;
     }
