@@ -7,9 +7,7 @@ const start_prices = ["20", "30", "40", "50", "60"];
 const avg_array = [];
 maxFreelancers = 10;
 
-// They observe on the list Alice, the writer 
-// with a starting price of $30, and Bob, who is a teacher, has a starting price of $50.
-
+// They observe an array of freelancers.
 const freelancers = [
     {
         name: 'Alice',
@@ -28,7 +26,7 @@ const freelancers = [
     // },
 ];
 
-//add freelancers to the list
+//add random freelancer to the list
 function newFreelancer() {
     const name = names[Math.floor(Math.random() * names.length)];
     const occupation = occupations[Math.floor(Math.random() * occupations.length)];
